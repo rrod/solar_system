@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- DESCRIPTION /////////////////////////////////////////////////////////////////
+  Rodolfo Rodriguez
+  2015
+  
+  This page is a 3D model of the Solar System using three.js.
+////////////////////////////////////////////////////////////////////////////// -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Solar System using Three.js</title>
+    
+    <style>
+      body {
+        overflow: hidden;
+        background: url('sphere_skybox_5.jpg');
+        
+        padding: 0;
+        margin: 0;
+        
+        color: #FFF;
+        text-align: center;
+        font-family: Monospace;
+      }
+      #info {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 99.2%;
+        padding: 5px;
+        z-index:10;
+        border: 1px solid #FFFFFF;
+        background: rgba(0,0,0,0.5);
+      }
+      a {
+        color: #0080FF;
+      }
+    </style>
+  </head>
+	<body id="body" bgcolor="#333333">
+
+  <div id="info">
+    <a href="http://rrod.github.io" target="_blank">[HOME]</a> | <a href="http://github.com/rrod/solar_system" target="_blank">[ABOUT]</a> || 
+    <a href="#" onclick="show_hide(0);">[HIDE]</a> Orbital Paths | 
+    <a href="#" onclick="show_hide(1);">[HIDE]</a> Background | 
+    <a href="#" onclick="show_hide(2);">[HIDE]</a> Moon | 
+    <a href="#" onclick="show_hide(3);">[HIDE]</a> Inner Planets | 
+    <a href="#" onclick="show_hide(4);">[HIDE]</a> Outer Planets
+  </div>
+
+	</body>
+  
+  <script type="text/javascript" src="three.min.js"></script>
+  <script type="text/javascript" src="OrbitControls.js"></script>
+  <script type="text/javascript" src="SolarSystem.js"></script>
+</html>
